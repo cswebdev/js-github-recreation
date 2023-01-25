@@ -14,8 +14,25 @@
 </head>
 
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
 
-
+    </div>
+    <script id="profile-aside" type="text/x-handlebars-template">
+        <div class="card" style="width: 18rem;">
+            <img src="{{avatar_url}}" class="card-img-top rounded-circle" alt="profile avatar - Chelsea's beautiful face">
+            <div class="card-body">
+              <h5 class="card-title">{{myData.name}}</h5>
+              <h6 class="card-sub-title">{{myData.login}}</h6>
+              <p class="card-text">{{myData.bio}}</p>
+              <a href="#" class="btn btn-primary">edit profile</a>
+              <p class="card-text flex-row followers">{{myData.followers}} + {{myData.following}}</p>
+            </div>
+          </div>
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
         integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
