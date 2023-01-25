@@ -34,4 +34,23 @@ const myData = {
    updated_at: "2023-01-19T21:20:36Z",
 };
 
+// const orgData = {
+//     [
+//         {
+//           "login": "ccs-winter-2023",
+//           "id": 121811161,
+//           "node_id": "O_kgDOB0Kw2Q",
+//           "url": "https://api.github.com/orgs/ccs-winter-2023",
+//           "repos_url": "https://api.github.com/orgs/ccs-winter-2023/repos",
+//           "events_url": "https://api.github.com/orgs/ccs-winter-2023/events",
+//           "hooks_url": "https://api.github.com/orgs/ccs-winter-2023/hooks",
+//           "issues_url": "https://api.github.com/orgs/ccs-winter-2023/issues",
+//           "members_url": "https://api.github.com/orgs/ccs-winter-2023/members{/member}",
+//           "public_members_url": "https://api.github.com/orgs/ccs-winter-2023/public_members{/member}",
+//           "avatar_url": "https://avatars.githubusercontent.com/u/121811161?v=4",
+//           "description": null
+//         }
+//       ]
+// };
+
 export default myData;

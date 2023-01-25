@@ -11,27 +11,36 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css
     ">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gitcolors.css">
 </head>
 
 <body>
     <div class="container">
         <div class="row">
-            <div class="col"></div>
+            <div class="col profile-aside"></div>
             <div class="col"></div>
         </div>
 
     </div>
-    <script id="profile-aside" type="text/x-handlebars-template">
+    <script id="aside-template" type="text/x-handlebars-template">
+        {{#this}}
         <div class="card" style="width: 18rem;">
-            <img src="{{avatar_url}}" class="card-img-top rounded-circle" alt="profile avatar - Chelsea's beautiful face">
+            <img src="{{avatar_url}}" class="card-img-top rounded-circle" alt="profile avatar">
             <div class="card-body">
-              <h5 class="card-title">{{myData.name}}</h5>
-              <h6 class="card-sub-title">{{myData.login}}</h6>
-              <p class="card-text">{{myData.bio}}</p>
-              <a href="#" class="btn btn-primary">edit profile</a>
-              <p class="card-text flex-row followers">{{myData.followers}} + {{myData.following}}</p>
+              <h5 class="card-title">{{name}}</h5>
+              <h6 class="card-sub-title">{{login}}</h6>
+              <p class="card-text">{{bio}}</p>
+              <div class="d-grid gap-2">
+                <a href="#" class="btn btn-dark">Edit profile</a>
+              </div>
+              <p class="card-text text-center">{{followers}} followers &#x2022; {{following}} following </p>
+              
+              <div id="section-break"></div>
+              <h6 class="card-sub-title">Organizations</h6>
+              <img src="{{orgAvatar}}" class="card-img" alt="ccs avatar">
             </div>
           </div>
+          {{/this}}
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
         integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
